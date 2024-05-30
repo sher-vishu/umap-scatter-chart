@@ -1,3 +1,4 @@
+import CanvasScatterChart from './components/CanvasScatterChart';
 import UmapScatterChart from './components/ScatterPlot';
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
       <header className="App-header">
         UMAP SCATTER PLOT
       </header>
-      <UmapScatterChart />
+      <CanvasScatterChart />
     </div>
   );
 }
