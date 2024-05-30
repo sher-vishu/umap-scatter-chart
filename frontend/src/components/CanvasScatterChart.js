@@ -41,6 +41,7 @@ const CanvasScatterChart = () => {
         x: dataPoint.x,
         y: dataPoint.y,
         markerColor: getColorForLabel(dataPoint.labels),
+        barcode: dataPoint.barcode,
       }));
 
       const options = {
@@ -51,6 +52,9 @@ const CanvasScatterChart = () => {
         },
         axisY: {
           lineThickness: 1
+        },
+        toolTip: {
+          content: "Barcode: {barcode}"
         },
         data: [{
           type: "scatter",
